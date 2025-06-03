@@ -76,6 +76,28 @@ function App() {
           </div>
         </div>
       </section>
+      {/* Video Section */}
+    <section className="py-12 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-8">
+          Découvrez Nos Services
+        </h2>
+        <div className="relative w-full overflow-hidden rounded-2xl shadow-lg" style={{ paddingTop: '56.25%' }}>
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            controls
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/services.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
+    </section>
+
 
       
 
