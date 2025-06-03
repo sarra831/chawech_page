@@ -89,7 +89,7 @@ function App() {
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.1 }}
-              href="https://instagram.com/afrah.chawech"
+              href="https://instagram.com/chawech.events"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-secondary"
