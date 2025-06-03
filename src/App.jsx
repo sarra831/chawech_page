@@ -84,7 +84,7 @@ function App() {
     <section className="py-16 bg-primary/5">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-extrabold text-center text-primary mb-12">
-      Connectez-Nous
+      Contactez-Nous
     </h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
