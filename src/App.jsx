@@ -120,6 +120,7 @@ function App() {
       <footer className="bg-primary/10 py-6">
         <div className="container mx-auto px-4 text-center text-primary">
           <p>© 2025 Infinity . All rights reserved.</p>
+
         </div>
       </footer>
     </div>
