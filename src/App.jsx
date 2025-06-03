@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt, FaWifi } from 'react-icons/fa';
 import img1 from '../public/1000022994.jpg'; // 
-import React from 'react';
 import img2 from '../public/1000023000.jpg'; // 
 import img3 from '../public/1000023040.jpg'; // 
 import logo from '../public/logoc.png'; // Logo image
@@ -12,7 +11,7 @@ function App() {
       {/* Header */}
       <motion.header 
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }} 
         className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm"
       >
         <div className="container mx-auto px-4 py-4 flex justify-center items-center">
@@ -40,12 +39,18 @@ function App() {
               animate={{ x: 0, opacity: 1 }}
               className="flex flex-col justify-center"
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-               Votre mariage de rêve vous attend
+              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+               Organisateur de mariages et fêtes 
               </h1>
-              <p className="text-gray-600 text-lg mb-8">
-                Créons ensemble la célébration parfaite pour votre grand jour. Des designs élégants, une exécution impeccable et des moments inoubliables.
-              </p>
+              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+               الشاوش للأفراح 
+              </h1>
+              <p className="text-gray-900 text-lg mb-8 text-center">
+              Transformons vos rêves en fêtes inoubliables. De la planification à la décoration, nous créons des moments magiques pour vos célébrations privées, mariages et événements spéciaux.        
+            </p>
+            <p className=" text-lg  text-primary font-bold leading-relaxed text-center">
+          منظم حفلات وأعراس بشغف  حيث يلتقي الإبداع بالرقيّ وتُصنع أجمل الذكريات
+        </p>
             </motion.div>
           </div>
         </div>
@@ -72,57 +77,74 @@ function App() {
         </div>
       </section>
 
+      
+
+
       {/* Contact Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-primary mb-12">Connectez Nous</h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              href="https://facebook.com/afrah.chawech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary hover:text-secondary"
-            >
-              <FaFacebook size={24} />
-              <span>Facebook</span>
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              href="https://instagram.com/chawech.events"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary hover:text-secondary"
-            >
-              <FaInstagram size={24} />
-              <span>Instagram</span>
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              href="tel:+21622922137"
-              className="flex items-center gap-2 text-primary hover:text-secondary"
-            >
-              <FaPhone size={24} />
-              <span>Appelez-nous</span>
-            </motion.a>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              className="flex items-center gap-2 text-primary"
-            >
-              <FaMapMarkerAlt size={24} />
-              <span>Route beni khedech Medenine</span>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+    <section className="py-16 bg-primary/5">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-extrabold text-center text-primary mb-12">
+      Connectez-Nous
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      {/* Facebook */}
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        href="https://facebook.com/afrah.chawech"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col items-center text-primary hover:text-secondary transition-colors duration-200"
+      >
+        <FaFacebook size={32} className="mb-2" />
+        <span className="font-medium">Facebook</span>
+      </motion.a>
+
+      {/* Instagram */}
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        href="https://instagram.com/chawech.events"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col items-center text-primary hover:text-secondary transition-colors duration-200"
+      >
+        <FaInstagram size={32} className="mb-2" />
+        <span className="font-medium">Instagram</span>
+      </motion.a>
+
+      {/* Phone */}
+      <motion.a
+        whileHover={{ scale: 1.05 }}
+        href="tel:+21622922137"
+        className="flex flex-col items-center text-primary hover:text-secondary transition-colors duration-200"
+      >
+        <FaPhone size={32} className="mb-2" />
+        <span className="font-medium">Appelez-nous</span>
+      </motion.a>
+
+      {/* Location */}
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        className="flex flex-col items-center text-primary cursor-default"
+      >
+        <FaMapMarkerAlt size={32} className="mb-2" />
+        <span className="font-medium text-center px-2">Route Beni Khedech, Médenine</span>
+      </motion.div>
+    </div>
+  </div>
+ </section>
 
       {/* Footer */}
-      <footer className="bg-primary/10 py-6">
-        <div className="container mx-auto px-4 text-center text-primary">
-          <p>© 2025 Infinity . All rights reserved.</p>
+     <footer className="bg-primary/10 py-6">
+  <div className="container mx-auto px-4 text-center text-primary flex justify-center items-center gap-2">
+    <FaWifi className="text-primary w-4 h-4" />
+    <p className="text-sm">
+      2025 <a href="https://www.infinitytunisia.com/" className="underline hover:text-primary/70">Infinity NFC</a>. All rights reserved ©
+    </p>
+  </div>
+</footer>
 
-        </div>
-      </footer>
+
     </div>
   );
 }
